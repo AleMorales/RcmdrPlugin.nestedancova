@@ -1,0 +1,10 @@
+# menus for the RcmdrPlugin.nestedancova package
+
+# type  menu/item   operation/parent  label                   command/menu        activation                  install?
+
+item    meansMenu    command         "General AN(C)OVA..."    GeneralANCOVA       "numericP() && factorsP()"       ""
+menu    ANCOVAMenu   modelsMenu      ""                      ""   		""                               ""
+item    ANCOVAMenu   command         "Table of means"        TableOfMeans       "modelCapability('tabmean')"     ""
+item    ANCOVAMenu   command         "Table of effects"      TableOfEffects     "modelCapability('tabeffect')"   ""
+item    ANCOVAMenu   command         "Posthoc tests..."      PosthocTests       "modelCapability('posthoc')"     "packageAvailable('multcomp') && packageAvailable('emmeans')"
+item    modelsMenu   cascade         "General AN(C)OVA"      ANCOVAMenu         ""                               ""

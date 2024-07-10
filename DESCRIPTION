@@ -1,0 +1,18 @@
+Package: RcmdrPlugin.nestedancova
+Title: R Commander Plug-in for full support of nested AN(C)OVA
+Version: 0.0.0.9000
+Authors@R: 
+    person("Alejandro", "Morales", , "morales.s.alejandro@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6129-4570"))
+Description: An R Commander plug-in for nested AN(C)OVA using the Error() term 
+  inside aov. This covers many experimental designs such as randomized blocks
+  or split plot designs.
+License: MIT + file LICENSE
+LazyLoad: yes
+LazyData: yes
+NeedsCompilation: no
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+RcmdrModels: ancova
+Imports: Rcmdr, dae, emmeans, multcomp, multcompView, tcltk
